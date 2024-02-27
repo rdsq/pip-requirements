@@ -1,13 +1,15 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Congratulations, your extension "pip-requirements" is now active!');
-
-	let disposable = vscode.commands.registerCommand('pip-requirements.install', () => {
-		vscode.window.showInformationMessage('Hello World from pip requirements!');
-	});
-
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.install', (textEditor, edit) => {
+		if (textEditor) {
+			const terminal = vscode.window.createTerminal();
+			terminal.sendText(`python -m pip install -r "${textEditor.fsPath}"`);
+			terminal.show();
+		} else {
+			vscode.window.showInformationMessage('Cannot run this command. Try to use it by clicking on the icon in pip requirements');
+		}
+	}));
 }
 
 export function deactivate() {}

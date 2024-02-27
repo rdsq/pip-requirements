@@ -2,6 +2,9 @@
   "name": "pip-requirements",
   "displayName": "pip requirements",
   "description": "Some tools for requirements.txt",
+  "author": {
+    "name": "rdsq"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
@@ -15,7 +18,7 @@
     "commands": [
       {
         "command": "pip-requirements.install",
-        "title": "Install pip requirements",
+        "title": "Install pip Requirements",
         "icon": "$(cloud-download)"
       }
     ],
