@@ -10,6 +10,8 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showInformationMessage('Cannot run this command. Try to use it by clicking on the icon in pip requirements');
 		}
 	}));
+
+	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.freeze', (textEditor, edit) => {}));
 }
 
 export function deactivate() {}
