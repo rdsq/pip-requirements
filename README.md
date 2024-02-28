@@ -1,71 +1,50 @@
-# pip-requirements README
+## pip-requirements
 
-This is the README for your extension "pip-requirements". After writing up a brief description, we recommend including the following sections.
+**Description:**
 
-## Features
+This extension provides two handy commands for working with `requirements.txt` files in Visual Studio Code:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* **Install pip Requirements:** Installs the packages listed in the current `requirements.txt` file.
+* **Freeze pip Packages:** Generates a new `requirements.txt` file based on the currently installed packages.
 
-For example if there is an image subfolder under your extension project workspace:
+**Features:**
 
-\!\[feature X\]\(images/feature-x.png\)
+* Integrates seamlessly with `requirements.txt` files.
+* Runs commands directly in a terminal window.
+* Provides clear error messages for invalid use.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+**Installation:**
 
-## Requirements
+1. Open the **Extensions** view (**Ctrl+Shift+X** or **Cmd+Shift+X**).
+2. Search for "pip-requirements".
+3. Click on the **Install** button.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+**Usage:**
 
-## Extension Settings
+1. Open a `requirements.txt` file in VS Code.
+2. Right-click anywhere in the file and select the desired command:
+    * **Install pip Requirements**
+    * **Freeze pip Packages**
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+**Requirements:**
 
-For example:
+* Visual Studio Code version 1.86.0 or higher
 
-This extension contributes the following settings:
+**Contribution Points:**
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension contributes the following commands and menus:
 
-## Known Issues
+* **Commands:**
+    * `pip-requirements.install`: Installs the packages listed in the current `requirements.txt` file.
+    * `pip-requirements.freeze`: Generates a new `requirements.txt` based on the currently installed packages.
+* **Menus:**
+    * The commands are available within the context menu when editing a `requirements.txt` file.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
+**Contributing:**
 
-Users appreciate release notes as you update your extension.
+We welcome contributions to this extension! Please refer to the contributing guidelines: [https://code.visualstudio.com/docs/sourcecontrol/github](https://code.visualstudio.com/docs/sourcecontrol/github) for more information.
 
-### 1.0.0
+**License:**
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is distributed under the MIT license. See the LICENSE: LICENSE file for details.
