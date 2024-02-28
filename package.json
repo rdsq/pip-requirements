@@ -5,8 +5,12 @@
   "author": {
     "name": "rdsq"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdsq/pip-requirements.git"
+  },
   "publisher": "rdsq",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.86.0"
   },
