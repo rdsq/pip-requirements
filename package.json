@@ -5,7 +5,7 @@
   "author": {
     "name": "rdsq"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -20,12 +20,22 @@
         "command": "pip-requirements.install",
         "title": "Install pip Requirements",
         "icon": "$(cloud-download)"
+      },
+      {
+        "command": "pip-requirements.freeze",
+        "title": "Freeze pip Packages",
+        "icon": "$(export)"
       }
     ],
     "menus": {
         "editor/title": [
             {
                 "command": "pip-requirements.install",
+                "group": "navigation",
+                "when": "editorLangId == 'pip-requirements'"
+            },
+            {
+                "command": "pip-requirements.freeze",
                 "group": "navigation",
                 "when": "editorLangId == 'pip-requirements'"
             }
