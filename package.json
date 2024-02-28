@@ -5,6 +5,7 @@
   "author": {
     "name": "rdsq"
   },
+  "publisher": "rdsq",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.86.0"
