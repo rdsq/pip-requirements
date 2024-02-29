@@ -12,10 +12,14 @@ export function activate(context: vscode.ExtensionContext) {
 		if (textEditor) {
 			runCommand(textEditor.fsPath);
 		} else {
+			const ignoreFocusOutSetting: boolean = vscode.workspace.getConfiguration(
+				'pip-requirements'
+			).get('ignoreFocusOut')!;
 			vscode.window.showInputBox({
 				title: 'Path to the requirements.txt file',
 				value: defaultPath,
-				placeHolder: defaultPath
+				placeHolder: defaultPath,
+				ignoreFocusOut: ignoreFocusOutSetting
 			}).then(path => {
 				if (path !== undefined) {
 					if (path === '') {

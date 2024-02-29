@@ -1,12 +1,12 @@
 {
   "name": "pip-requirements",
-  "displayName": "pip requirements",
+  "displayName": "Pip Requirements",
   "description": "Some useless tools for requirements.txt",
   "author": {
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -20,12 +20,12 @@
     "commands": [
       {
         "command": "pip-requirements.install",
-        "title": "Install pip Requirements",
+        "title": "Install Pip Requirements",
         "icon": "$(cloud-download)"
       },
       {
         "command": "pip-requirements.freeze",
-        "title": "Freeze pip Packages",
+        "title": "Freeze Pip Packages",
         "icon": "$(export)"
       }
     ],
@@ -42,6 +42,16 @@
                 "when": "editorLangId == 'pip-requirements'"
             }
         ]
+    },
+    "configuration": {
+      "title": "Pip Requirements",
+      "properties": {
+        "pip-requirements.ignoreFocusOut": {
+          "type": "boolean",
+          "default": false,
+          "description": "Ignore focus out of the input fields of the extension's commands"
+        }
+      }
     }
   },
   "scripts": {
