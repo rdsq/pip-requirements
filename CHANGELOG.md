@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.3.0 2024-02-29
-Added [README](README.md)
+Added README
 ## 1.2.1 2024-02-29
 Added the Changelog
 ## 1.2.0 2024-02-29
