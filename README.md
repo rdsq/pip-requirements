@@ -4,7 +4,7 @@ This useless extension gives you some tools for the requirements.txt file
 
 ## Taskbar
 
-It adds the buttons for `pip freeze` and `pip install -r` to the taskbar of the requirements file
+It adds buttons for `pip freeze` and `pip install -r` to the taskbar of the requirements file
 
 ## Command Pallete
 
