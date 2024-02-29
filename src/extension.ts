@@ -1,5 +1,7 @@
 import * as vscode from 'vscode';
 
+const defaultPath = 'requirements.txt';
+
 export function activate(context: vscode.ExtensionContext) {
 	function fromTemplate(textEditor: any, command: string) {
 		function runCommand(path: string) {
@@ -12,10 +14,13 @@ export function activate(context: vscode.ExtensionContext) {
 		} else {
 			vscode.window.showInputBox({
 				title: 'Path to the requirements.txt file',
-				value: 'requirements.txt',
-				placeHolder: 'requirements.txt'
+				value: defaultPath,
+				placeHolder: defaultPath
 			}).then(path => {
 				if (path !== undefined) {
+					if (path === '') {
+						path = defaultPath;
+					}
 					runCommand(path);
 				}
 			});
