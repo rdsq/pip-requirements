@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
