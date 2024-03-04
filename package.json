@@ -40,18 +40,18 @@
       }
     ],
     "menus": {
-        "editor/title": [
-            {
-                "command": "pip-requirements.install",
-                "group": "navigation",
-                "when": "editorLangId == 'pip-requirements'"
-            },
-            {
-                "command": "pip-requirements.freeze",
-                "group": "navigation",
-                "when": "editorLangId == 'pip-requirements'"
-            }
-        ]
+      "editor/title": [
+        {
+          "command": "pip-requirements.install",
+          "group": "navigation",
+          "when": "editorLangId == 'pip-requirements'"
+        },
+        {
+          "command": "pip-requirements.freeze",
+          "group": "navigation",
+          "when": "editorLangId == 'pip-requirements'"
+        }
+      ]
     },
     "configuration": {
       "title": "Pip Requirements",
