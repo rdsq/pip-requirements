@@ -8,7 +8,7 @@ It adds buttons for `pip freeze` and `pip install -r` to the taskbar of the requ
 
 ## Command Pallete
 
-You can also use these commands from the Command Pallete and enter the path to your file manually
+You can also use these commands from the Command Pallete or enter the path to your file manually
 
 ## Settings
 
