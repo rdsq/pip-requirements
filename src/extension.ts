@@ -3,39 +3,52 @@ import * as vscode from 'vscode';
 const defaultPath = 'requirements.txt';
 
 export function activate(context: vscode.ExtensionContext) {
-	function fromTemplate(textEditor: any, command: string) {
-		function runCommand(path: string) {
-			const terminal = vscode.window.createTerminal();
-			terminal.sendText(`python -m pip ${command} "${path}"`);
-			terminal.show();
-		}
+	function runCommand(path: string, command: string) {
+		const terminal = vscode.window.createTerminal();
+		terminal.sendText(`python -m pip ${command} "${path}"`);
+		terminal.show();
+	}
+	function focusTemplate(textEditor: any, command: string) {
 		if (textEditor) {
-			runCommand(textEditor.fsPath);
+			runCommand(textEditor.fsPath, command);
 		} else {
-			const ignoreFocusOutSetting: boolean = vscode.workspace.getConfiguration(
-				'pip-requirements'
-			).get('ignoreFocusOut')!;
-			vscode.window.showInputBox({
-				title: 'Path to the requirements.txt file',
-				value: defaultPath,
-				placeHolder: defaultPath,
-				ignoreFocusOut: ignoreFocusOutSetting
-			}).then(path => {
-				if (path !== undefined) {
-					if (path === '') {
-						path = defaultPath;
-					}
-					runCommand(path);
-				}
-			});
+			const editor = vscode.window.activeTextEditor;
+			if (editor !== undefined) {
+				runCommand(editor.document.uri.fsPath, command);
+			} else {
+				vscode.window.showErrorMessage('You are not focused on any text editor');
+			}
 		}
 	}
+	function manualTemplate(command: string) {
+		const ignoreFocusOutSetting: boolean = vscode.workspace.getConfiguration(
+			'pip-requirements'
+		).get('ignoreFocusOut')!;
+		vscode.window.showInputBox({
+			title: 'Path to the requirements.txt file',
+			value: defaultPath,
+			placeHolder: defaultPath,
+			ignoreFocusOut: ignoreFocusOutSetting
+		}).then(path => {
+			if (path !== undefined) {
+				if (path === '') {
+					path = defaultPath;
+				}
+				runCommand(path, command);
+			}
+		});
+	}
 	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.install', (textEditor, edit) => {
-		fromTemplate(textEditor, 'install -r');
+		focusTemplate(textEditor, 'install -r');
 	}));
-
 	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.freeze', (textEditor, edit) => {
-		fromTemplate(textEditor, 'freeze >');
+		focusTemplate(textEditor, 'freeze >');
+	}));
+	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.install-manual', () => {
+		manualTemplate('install -r');
+	}));
+	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.freeze-manual', () => {
+		manualTemplate('freeze >');
 	}));
 }
 

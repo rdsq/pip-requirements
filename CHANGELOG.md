@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.4.0 2024-03-04
+Added manual versions of commands
 ## 1.3.1 2024-03-04
 Grammar mistake fixed
 ## 1.3.0 2024-02-29

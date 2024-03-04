@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -26,6 +26,16 @@
       {
         "command": "pip-requirements.freeze",
         "title": "Freeze Pip Packages",
+        "icon": "$(export)"
+      },
+      {
+        "command": "pip-requirements.manual-install",
+        "title": "Install Pip Requirements manually",
+        "icon": "$(cloud-download)"
+      },
+      {
+        "command": "pip-requirements.manual-freeze",
+        "title": "Freeze Pip Packages manually",
         "icon": "$(export)"
       }
     ],
@@ -49,7 +59,7 @@
         "pip-requirements.ignoreFocusOut": {
           "type": "boolean",
           "default": false,
-          "description": "Ignore focus out of the input fields of the extension's commands"
+          "description": "Ignore focus out of the input fields of the extension's manual commands"
         }
       }
     }
