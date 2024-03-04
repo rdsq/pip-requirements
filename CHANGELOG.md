@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.3.1 2024-03-04
+Grammar mistake fixed
 ## 1.3.0 2024-02-29
 Added README
 ## 1.2.1 2024-02-29
