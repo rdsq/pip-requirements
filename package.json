@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -29,12 +29,12 @@
         "icon": "$(export)"
       },
       {
-        "command": "pip-requirements.manual-install",
+        "command": "pip-requirements.install-manual",
         "title": "Pip Requirements: Install manually",
         "icon": "$(cloud-download)"
       },
       {
-        "command": "pip-requirements.manual-freeze",
+        "command": "pip-requirements.freeze-manual",
         "title": "Pip Requirements: Freeze manually",
         "icon": "$(export)"
       }

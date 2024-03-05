@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.4.2 2024-03-05
+Manual commands names fixed
 ## 1.4.1 2024-03-05
 Commands rename, small change in README
 ## 1.4.0 2024-03-04
