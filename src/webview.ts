@@ -24,7 +24,6 @@ export default function showWebView() {
         vscode.window.showErrorMessage('You are not focused on any text editor');
     } else {
         const parsed = parseRequirements(editor.document.getText());
-        console.log(parsed);
         const renderedList: string[] = [];
         for (let element of parsed) {
             let content = `<span class="package">${element[0]}</span>`;
@@ -33,8 +32,6 @@ export default function showWebView() {
             }
             renderedList.push(content);
         }
-        console.log(renderedList);
-        console.log(renderedList.join('<br>\n'));
         const document =
         `<!DOCTYPE html>
         <html lang="en">
