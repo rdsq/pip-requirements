@@ -17,14 +17,3 @@ export function parseLine(line: string): Parsed | {} {
     }
     return {};
 }
-
-export function parseRequirements(content: string) {
-    const parsed: string[][] = [];
-    for (let row of content.split('\n')) {
-        const parsedLine = Object.values(parseLine(row));
-        if (parsedLine.length !== 0) {
-            parsed.push(parsedLine);
-        }
-    }
-    return parsed;
-}
