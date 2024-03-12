@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -41,6 +41,14 @@
       {
         "command": "pip-requirements.render",
         "title": "Pip Requirements: Render"
+      },
+      {
+        "command": "pip-requirements.install-row",
+        "title": "Pip Requirements: Install Package"
+      },
+      {
+        "command": "pip-requirements.browse-row",
+        "title": "Pip Requirements: View Package In Browser"
       }
     ],
     "menus": {
@@ -54,6 +62,18 @@
           "command": "pip-requirements.freeze",
           "group": "navigation",
           "when": "editorLangId == 'pip-requirements'"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "pip-requirements.install-row",
+          "when": "resourceLangId == 'pip-requirements'",
+          "group": "Package"
+        },
+        {
+          "command": "pip-requirements.browse-row",
+          "when": "resourceLangId == 'pip-requirements'",
+          "group": "Package"
         }
       ]
     },
