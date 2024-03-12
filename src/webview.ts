@@ -1,22 +1,5 @@
 import * as vscode from "vscode";
-
-function parseRequirements(content: string) {
-    const parsed: string[][] = [];
-    for (let row of content.split('\n')) {
-        const commentPosition = row.indexOf('#');
-        if (commentPosition !== -1) {
-            row = row.slice(0, commentPosition);
-        }
-        if (row.trim() !== '') {
-            const splited = row.split('==');
-            parsed.push([
-                splited[0].trim(),
-                splited[1].trim()
-            ]);
-        }
-    }
-    return parsed;
-}
+import { parseRequirements } from './parser';
 
 export default function showWebView() {
     const editor = vscode.window.activeTextEditor;
