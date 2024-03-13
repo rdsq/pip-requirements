@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.6.0",
+  "version": "1.5.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -40,11 +40,11 @@
       },
       {
         "command": "pip-requirements.install-row",
-        "title": "Pip Requirements: Install Package"
+        "title": "Install Pip Package"
       },
       {
         "command": "pip-requirements.browse-row",
-        "title": "Pip Requirements: View Package In Browser"
+        "title": "View Pip Package In Browser"
       }
     ],
     "menus": {

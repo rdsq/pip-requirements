@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { focusTemplate, manualTemplate } from './templates';
+import { contextTemplate, focusTemplate, manualTemplate } from './templates';
 
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.install', (textEditor, edit) => {
@@ -13,6 +13,22 @@ export function activate(context: vscode.ExtensionContext) {
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.freeze-manual', () => {
 		manualTemplate('freeze >');
+	}));
+	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.install-row', (editor: vscode.TextEditor) => {
+		contextTemplate((parsed) => {
+			let query = parsed.name;
+			if (parsed.version !== null) {
+				query += `==${parsed.version}`;
+			}
+			const terminal = vscode.window.createTerminal();
+            terminal.sendText(`python -m pip install ${query}`);
+            terminal.show();
+		});
+	}));
+	context.subscriptions.push(vscode.commands.registerCommand('pip-requirements.browse-row', (editor: vscode.TextEditor) => {
+		contextTemplate((parsed) => {
+			vscode.env.openExternal(vscode.Uri.parse(`https://pypi.org/project/${parsed.name}/`));
+		});
 	}));
 }
 

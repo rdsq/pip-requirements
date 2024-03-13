@@ -1,8 +1,9 @@
 import * as vscode from 'vscode';
+import { Parsed, parseLine } from './parser';
 
 export const defaultPath = 'requirements.txt';
 
-export function runCommand(path: string, command: string) {
+function runCommand(path: string, command: string) {
     const terminal = vscode.window.createTerminal();
     terminal.sendText(`python -m pip ${command} "${path}"`);
     terminal.show();
@@ -38,4 +39,28 @@ export function manualTemplate(command: string) {
             runCommand(path, command);
         }
     });
+}
+
+type actionFunc = (parsed: Parsed) => void;
+export function contextTemplate(action: actionFunc) {
+    const editor = vscode.window.activeTextEditor;
+    // Check if the action was triggered from a text editor
+    if (editor) {
+        console.log(editor, editor.selection);
+        const line = editor.selection.isEmpty ? editor.selection.active : editor.selection.start;
+        // const line = editor.selection.start.line;
+        const text = editor.document.lineAt(line).text;
+        const parsed = parseLine(text);
+        if (parsed === null) {
+            vscode.window.showErrorMessage(
+                'Pip package was not found on that line'
+            );
+        } else {
+            action(parsed);
+        }
+    } else {
+        vscode.window.showErrorMessage(
+            'You are not focused on any text editor'
+        );
+    }
 }
