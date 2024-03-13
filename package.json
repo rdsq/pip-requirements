@@ -39,10 +39,6 @@
         "icon": "$(export)"
       },
       {
-        "command": "pip-requirements.render",
-        "title": "Pip Requirements: Render"
-      },
-      {
         "command": "pip-requirements.install-row",
         "title": "Pip Requirements: Install Package"
       },
