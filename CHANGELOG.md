@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.6.1 2024-03-14
+Added icon.svg to .vscodeignore
 ## 1.6.0 2024-03-14
 New icon
 ## 1.5.0 2024-03-13
