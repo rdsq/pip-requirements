@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -16,7 +16,6 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
-  "browser": "./out/web.js",
   "contributes": {
     "commands": [
       {
@@ -69,7 +68,7 @@
         },
         {
           "command": "pip-requirements.browse-row",
-          "when": "resourceLangId == 'pip-requirements'",
+          "when": "resourceLangId == 'pip-requirements' && uiKind == 'desktop'",
           "group": "Package"
         }
       ],

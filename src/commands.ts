@@ -33,6 +33,7 @@ export const installRow = vscode.commands.registerCommand(`${extName}.install-ro
 
 export const browseRow = vscode.commands.registerCommand(`${extName}.browse-row`, () => {
     contextTemplate((parsed) => {
-        vscode.env.openExternal(vscode.Uri.parse(`https://pypi.org/project/${parsed.name}/`));
+        const link = `https://pypi.org/project/${parsed.name}/`;
+        vscode.env.openExternal(vscode.Uri.parse(link));
     });
 });

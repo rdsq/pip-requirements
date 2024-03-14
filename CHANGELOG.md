@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.7.2 2024-03-14
+Web version and "open in browser" disabled
 ## 1.7.1 2024-03-14
 Added web version of the extension
 ## 1.7.0 2024-03-14
