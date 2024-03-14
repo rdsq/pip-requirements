@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import { Parsed, parseLine } from './parser';
 
-export const defaultPath = 'requirements.txt';
+const defaultPath = 'requirements.txt';
 
 function runCommand(path: string, command: string) {
     const terminal = vscode.window.createTerminal();
