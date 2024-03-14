@@ -19,8 +19,12 @@ You can also use these commands from the Command Pallete or enter the path to yo
 
 ## Context Menu
 
-- `Install Pip Package` to install the package
-- `View Pip Package In Browser` to open the package page in browser on [pypi.org](https://pypi.org/)
+You can click on any row in your requirements file to:
+
+- `Install Pip Package` install the package
+- `View Pip Package In Browser` open the package page in browser on [pypi.org](https://pypi.org/)
+
+You can also use context menu on any requirements file in explorer
 
 ## Settings
 

@@ -9,9 +9,9 @@ function runCommand(path: string, command: string) {
     terminal.show();
 }
 
-export function focusTemplate(textEditor: any, command: string) {
-    if (textEditor) {
-        runCommand(textEditor.fsPath, command);
+export function focusTemplate(event: any, command: string) {
+    if (event) {
+        runCommand(event.fsPath, command);
     } else {
         const editor = vscode.window.activeTextEditor;
         if (editor !== undefined) {

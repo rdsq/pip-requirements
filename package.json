@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -20,22 +20,22 @@
     "commands": [
       {
         "command": "pip-requirements.install",
-        "title": "Pip Requirements: Install",
+        "title": "Install Pip Packages",
         "icon": "$(cloud-download)"
       },
       {
         "command": "pip-requirements.freeze",
-        "title": "Pip Requirements: Freeze",
+        "title": "Freeze Pip Packages",
         "icon": "$(export)"
       },
       {
         "command": "pip-requirements.install-manual",
-        "title": "Pip Requirements: Install manually",
+        "title": "Install Pip Packages manually",
         "icon": "$(cloud-download)"
       },
       {
         "command": "pip-requirements.freeze-manual",
-        "title": "Pip Requirements: Freeze manually",
+        "title": "Freeze Pip Packages manually",
         "icon": "$(export)"
       },
       {
@@ -70,6 +70,18 @@
           "command": "pip-requirements.browse-row",
           "when": "resourceLangId == 'pip-requirements'",
           "group": "Package"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "pip-requirements.install",
+          "when": "resourceLangId == 'pip-requirements'",
+          "group": "Pip"
+        },
+        {
+          "command": "pip-requirements.freeze",
+          "when": "resourceLangId == 'pip-requirements'",
+          "group": "Pip"
         }
       ]
     },

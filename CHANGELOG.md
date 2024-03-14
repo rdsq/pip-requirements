@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.7.0 2024-03-14
+Added context menu to requirements files in explorer, renamed some commands, updated README
 ## 1.6.1 2024-03-14
 Added icon.svg to .vscodeignore
 ## 1.6.0 2024-03-14
