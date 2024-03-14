@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -16,6 +16,7 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
+  "browser": "./out/web.js",
   "contributes": {
     "commands": [
       {
@@ -52,18 +53,18 @@
         {
           "command": "pip-requirements.install",
           "group": "navigation",
-          "when": "editorLangId == 'pip-requirements'"
+          "when": "editorLangId == 'pip-requirements' && uiKind == 'desktop'"
         },
         {
           "command": "pip-requirements.freeze",
           "group": "navigation",
-          "when": "editorLangId == 'pip-requirements'"
+          "when": "editorLangId == 'pip-requirements' && uiKind == 'desktop'"
         }
       ],
       "editor/context": [
         {
           "command": "pip-requirements.install-row",
-          "when": "resourceLangId == 'pip-requirements'",
+          "when": "resourceLangId == 'pip-requirements' && uiKind == 'desktop'",
           "group": "Package"
         },
         {
@@ -75,12 +76,12 @@
       "explorer/context": [
         {
           "command": "pip-requirements.install",
-          "when": "resourceLangId == 'pip-requirements'",
+          "when": "resourceLangId == 'pip-requirements' && uiKind == 'desktop'",
           "group": "Pip"
         },
         {
           "command": "pip-requirements.freeze",
-          "when": "resourceLangId == 'pip-requirements'",
+          "when": "resourceLangId == 'pip-requirements' && uiKind == 'desktop'",
           "group": "Pip"
         }
       ]

@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.7.1 2024-03-14
+Added web version of the extension
 ## 1.7.0 2024-03-14
 Added context menu to requirements files in explorer, renamed some commands, updated README
 ## 1.6.1 2024-03-14
