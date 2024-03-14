@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.6.0 2024-03-14
+New icon
 ## 1.5.0 2024-03-13
 Added context menu actions `Install Pip Package` and `View Pip Package In Browser`, added Commands section in README
 ## 1.4.2 2024-03-05
