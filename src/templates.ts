@@ -42,13 +42,12 @@ export function manualTemplate(command: string) {
 }
 
 type actionFunc = (parsed: Parsed) => void;
+
 export function contextTemplate(action: actionFunc) {
     const editor = vscode.window.activeTextEditor;
     // Check if the action was triggered from a text editor
     if (editor) {
-        console.log(editor, editor.selection);
         const line = editor.selection.isEmpty ? editor.selection.active : editor.selection.start;
-        // const line = editor.selection.start.line;
         const text = editor.document.lineAt(line).text;
         const parsed = parseLine(text);
         if (parsed === null) {
