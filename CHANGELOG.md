@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.7.4 2024-04-10
+Menus display fix
 ## 1.7.3 2024-03-19
 Returned web support, fixed the parser
 ## 1.7.2 2024-03-14
