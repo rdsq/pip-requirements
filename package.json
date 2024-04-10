@@ -92,7 +92,7 @@
         "pip-requirements.ignoreFocusOut": {
           "type": "boolean",
           "default": false,
-          "description": "Ignore focus out of the input fields of the extension's manual commands"
+          "description": "Ignore focus out of extension's input fields"
         }
       }
     }
