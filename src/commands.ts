@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import { focusTemplate, manualTemplate, contextTemplate } from './templates';
-
-const extName = 'pip-requirements';
+import { extName } from './general';
 
 export const installCmd = vscode.commands.registerCommand(`${extName}.install`, (event) => {
     focusTemplate(event, 'install -r');
@@ -31,9 +30,5 @@ export const installRow = vscode.commands.registerCommand(`${extName}.install-ro
     });
 });
 
-export const browseRow = vscode.commands.registerCommand(`${extName}.browse-row`, () => {
-    contextTemplate((parsed) => {
-        const link = `https://pypi.org/project/${parsed.name}/`;
-        vscode.env.openExternal(vscode.Uri.parse(link));
-    });
-});
+// reexport commands with web support
+export { browseRow } from './web/commands';

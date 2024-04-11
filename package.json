@@ -16,7 +16,7 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
-  "browser": "./out/web.js",
+  "browser": "./out/web/extension.js",
   "contributes": {
     "commands": [
       {
