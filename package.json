@@ -45,7 +45,7 @@
       },
       {
         "command": "pip-requirements.browse-row",
-        "title": "View Pip Package In Browser"
+        "title": "View Pip Package In The Browser"
       }
     ],
     "menus": {
