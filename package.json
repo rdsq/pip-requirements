@@ -92,7 +92,7 @@
         "pip-requirements.ignoreFocusOut": {
           "type": "boolean",
           "default": false,
-          "description": "Ignore focus out of the extension's manual `install` and `freeze` input fields"
+          "description": "Do not close the path input fields when the focus moves out of them"
         }
       }
     }
