@@ -30,4 +30,4 @@ You can also do the same things you can do on the editor's taskbar (`install` an
 
 ## Settings
 
-You can configure if the input field of these manual commands should ignore when you move your focus out of it
+`pip-requirements.ignoreFocusOut`: should the input fields of the manual commands not close when you move your focus out of them 
