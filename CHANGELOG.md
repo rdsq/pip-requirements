@@ -5,6 +5,7 @@
 - Now if you are not focused on any text editors, you will be asked to enter the path manually instead of showing the `You are not focused on any text editors` error
 - Manual versions of those commands removed from the Command Palette
 - Some refactoring
+- Fixed some typos
 ## v1.7.4 2024-04-10
 Menus display fix
 ## 1.7.3 2024-03-19
