@@ -3,11 +3,11 @@ import { focusTemplate, manualTemplate, contextTemplate } from './templates';
 import { extName } from './general';
 
 export const installCmd = vscode.commands.registerCommand(`${extName}.install`, (event) => {
-    focusTemplate(event, 'install -r');
+    focusTemplate(event, 'install -r', 'install');
 });
 
 export const freezeCmd = vscode.commands.registerCommand(`${extName}.freeze`, (event) => {
-    focusTemplate(event, 'freeze >');
+    focusTemplate(event, 'freeze >', 'freeze');
 });
 
 export const installManual = vscode.commands.registerCommand(`${extName}.install-manual`, () => {

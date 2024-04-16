@@ -1,22 +1,21 @@
 import * as vscode from 'vscode';
-import { Parsed, parseLine } from './parser';
-import { defaultPath } from './general';
+import { defaultPath, extName } from './general';
 
-function runCommand(path: string, command: string) {
+function runPipCommand(path: string, command: string) {
     const terminal = vscode.window.createTerminal();
     terminal.sendText(`python -m pip ${command} "${path}"`);
     terminal.show();
 }
 
-export function focusTemplate(event: any, command: string) {
+export function focusTemplate(event: any, command: string, commandName: string) {
     if (event) {
-        runCommand(event.fsPath, command);
+        runPipCommand(event.fsPath, command);
     } else {
         const editor = vscode.window.activeTextEditor;
         if (editor !== undefined) {
-            runCommand(editor.document.uri.fsPath, command);
+            runPipCommand(editor.document.uri.fsPath, command);
         } else {
-            vscode.window.showErrorMessage('You are not focused on any text editor');
+            vscode.commands.executeCommand(`${extName}.${commandName}-manual`);
         }
     }
 }
@@ -35,7 +34,7 @@ export function manualTemplate(command: string) {
             if (path === '') {
                 path = defaultPath;
             }
-            runCommand(path, command);
+            runPipCommand(path, command);
         }
     });
 }

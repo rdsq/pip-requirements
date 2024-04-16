@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.7.4 2024-04-10
+## v1.8.0 2024-04-16
+- Some text changes in README and the `ignoreFocusOut` command description
+- Now if you are not focused on any text editors, you will be asked to enter the path manually instead of showing the `You are not focused on any text editors` error
+- Manual versions of those commands removed from the Command Palette
+- Some refactoring
+## v1.7.4 2024-04-10
 Menus display fix
 ## 1.7.3 2024-03-19
 Returned web support, fixed the parser
@@ -31,6 +36,6 @@ Added the Changelog
 ## 1.2.0 2024-02-29
 Changed some texts to uppercase, added extension's settings
 ## 1.1.0 2024-02-29
-Now it is possible to run the extension's commands from the Command Pallete
+Now it is possible to run the extension's commands from the Command Palette
 ## 1.0.0 2024-02-28
 Release

@@ -6,16 +6,19 @@ This useless extension gives you some tools for the requirements.txt file
 
 It adds buttons for `pip freeze` and `pip install -r` commands to the taskbar of requirements editors
 
-## Command Pallete
+## Command Palette
 
-You can also use these commands from the Command Pallete, but this is not very useful
-
-## Commands
+You can also use these commands from the Command Palette, but this is not very useful
 
 - `Pip Requirements: Install`: install requirements from the current file
-- `Pip Recuirements: Freeze`: write all installed packages to the current file
-- `Pip Requirements: Install manually`: install requirements from the selected file
-- `Pip Requirements: Freeze manually`: write all installed packages to the selected file
+- `Pip Requirements: Freeze`: write all installed packages to the current file
+
+## Not Command Palette Commands
+
+You cannot use those from the Command Palette, but you can use those through the VSCode API or the keybindings menu, but only after activating the extension
+
+- `pip-requirements.install-manual` - Install the requirements with manually defined path
+- `pip-requirements.freeze-manual` Freeze the requirements with manually defined path
 
 ## Editor Context Menu
 
