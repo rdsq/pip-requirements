@@ -5,11 +5,11 @@
 - Completely remove the *manual commands* and merge them to the *main commands*
 - Rewrite that terminal experience to child_process
 - Rename that setting?
-- Switch to yarn
 
 ## [Unreleased]
 - Some text changes on the README
 - Added the **Unreleased** and **Planned** sections to the Changelog
+- Switched to yarn
 
 ### Code changes
 
