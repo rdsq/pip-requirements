@@ -15,7 +15,7 @@ You can also use these commands from the Command Palette, but this is not very u
 
 ## Not Command Palette Commands
 
-You cannot use those from the Command Palette, but you can use those through the VSCode API or the keybindings menu, but only after activating the extension
+You cannot use those commands from the Command Palette, but you still can use them from the **VSCode API** or the **keybindings** menu, but only after activating the extension
 
 - `pip-requirements.install-manual` - Install the requirements with manually defined path
 - `pip-requirements.freeze-manual` Freeze the requirements with manually defined path
@@ -29,7 +29,7 @@ You can click on any row in your requirements file to:
 
 ## Explorer context menu
 
-You can also do the same things you can do on the editor's taskbar (`install` and `freeze`) in the context menu on the requirements file in the explorer
+You can also do the same things you can do on the editor's taskbar (`install` and `freeze`) on the context menu of requirements files in the explorer
 
 ## Settings
 
