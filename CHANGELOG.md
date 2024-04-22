@@ -2,19 +2,19 @@
 
 ## [Planned]
 
-- Completely remove the *manual commands* and merge them to the *main commands*
 - Rewrite that terminal experience to child_process
 - Rename that setting?
 
 ## [Unreleased]
 - Some text changes on the README
 - Added the **Unreleased** and **Planned** sections to the Changelog
-- Switched to yarn
+- Completely removed the *manual commands* and merged their functionality to the *main commands*
 
 ### Code changes
 
 - Removed the screenshots directory
 - Added a GitHub Action to deploy this extension
+- Switched to yarn
 
 ## v1.8.0 2024-04-16
 - Some text changes in README and the `ignoreFocusOut` command description

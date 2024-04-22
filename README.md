@@ -1,6 +1,6 @@
 # Pip Requirements
 
-This useless extension gives you some tools for the *requirements.txt* file
+This useless extension gives you some tools for the **requirements.txt** file
 
 ## Taskbar
 
@@ -35,4 +35,4 @@ You can also do the same things you can do on the editor's taskbar (`install` an
 
 ## Settings
 
-`pip-requirements.ignoreFocusOut`: should the input fields of the *manual commands* not close when you move your focus out of them 
+`pip-requirements.ignoreFocusOut`: should the input fields of the commands not close when you move your focus out of them
