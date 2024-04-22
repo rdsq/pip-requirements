@@ -1,8 +1,13 @@
 # Changelog
 
+## [Planned]
+
+- Completely remove the *manual commands* and merge them to the *main commands*
+- Rewrite that terminal experience to child_process
+
 ## [Unreleased]
 - Some text changes on the README
-- Added the unreleased section to the Changelog
+- Added the **Unreleased** and **Planned** sections to the Changelog
 
 ## v1.8.0 2024-04-16
 - Some text changes in README and the `ignoreFocusOut` command description
