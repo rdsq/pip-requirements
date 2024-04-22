@@ -20,6 +20,8 @@ You cannot use those commands from the **Command Palette**, but you still can us
 - `pip-requirements.install-manual` - **Install** the requirements with manually defined path
 - `pip-requirements.freeze-manual` **Freeze** the requirements with manually defined path
 
+**(Those will probably be removed soon)**
+
 ## Editor **Context Menu**
 
 You can click on any row in your requirements file to:
