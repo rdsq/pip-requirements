@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+- Some text changes on the README
+- Added the unreleased section to the Changelog
+
 ## v1.8.0 2024-04-16
 - Some text changes in README and the `ignoreFocusOut` command description
 - Now if you are not focused on any text editors, you will be asked to enter the path manually instead of showing the `You are not focused on any text editors` error
