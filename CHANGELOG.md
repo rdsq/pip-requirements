@@ -6,6 +6,9 @@
 - Rename that setting?
 
 ## [Unreleased]
+
+## v1.9.1 2024-04-22
+- Removed the manual commands from the README
 #### Code changes
 - Removed GitHub Action
 

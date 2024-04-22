@@ -13,15 +13,6 @@ You can also use these commands from the **Command Palette**, but this is not ve
 - `Pip Requirements: Install`: **Install** requirements from the current file
 - `Pip Requirements: Freeze`: **Freeze** all installed packages to the current file
 
-## Not **Command Palette** Commands
-
-You cannot use those commands from the **Command Palette**, but you still can use them from the **VSCode API** or the **keybindings** menu, but only after activating the extension
-
-- `pip-requirements.install-manual` - **Install** the requirements with manually defined path
-- `pip-requirements.freeze-manual` **Freeze** the requirements with manually defined path
-
-**(Those will probably be removed soon)**
-
 ## Editor **Context Menu**
 
 You can click on any row in your requirements file to:
