@@ -11,7 +11,7 @@
 - Some text changes on the README
 - Added the **Unreleased** and **Planned** sections to the Changelog
 
-**Code changes**
+### Code changes
 
 - Removed the screenshots directory
 - Added a GitHub Action to deploy this extension
