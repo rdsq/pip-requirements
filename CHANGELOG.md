@@ -10,6 +10,9 @@
 ## [Unreleased]
 - Some text changes on the README
 - Added the **Unreleased** and **Planned** sections to the Changelog
+**Code changes**
+- Removed the screenshots directory
+- Added a GitHub Action to deploy this extension
 
 ## v1.8.0 2024-04-16
 - Some text changes in README and the `ignoreFocusOut` command description
