@@ -6,6 +6,8 @@
 - Rename that setting?
 
 ## [Unreleased]
+
+## v1.9.0 2024-04-22
 - Some text changes on the README
 - Added the **Unreleased** and **Planned** sections to the Changelog
 - Completely removed the *manual commands* and merged their functionality to the *main commands*
