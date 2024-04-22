@@ -4,6 +4,7 @@
 
 - Completely remove the *manual commands* and merge them to the *main commands*
 - Rewrite that terminal experience to child_process
+- Rename that setting?
 
 ## [Unreleased]
 - Some text changes on the README
