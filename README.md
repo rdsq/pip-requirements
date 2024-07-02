@@ -6,9 +6,15 @@ This useless extension gives you some tools for the **requirements.txt** file
 
 It adds buttons for `pip freeze` and `pip install -r` commands to the taskbar of requirements editors
 
+## Create Requirements File
+
+There is a command to create a requirements file and immediately freeze packages to it: `Pip Requirements: Create Requirements File`
+
+To use it, simply run it from the Command Palette. It will do everything else
+
 ## Command Palette
 
-You can also use these commands from the **Command Palette**, but this is not very useful
+You can also use other commands from the **Command Palette**, but this is not very useful
 
 - `Pip Requirements: Install`: **Install** requirements from the current file
 - `Pip Requirements: Freeze`: **Freeze** all installed packages to the current file

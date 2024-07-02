@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.86.0"
@@ -36,6 +36,10 @@
       {
         "command": "pip-requirements.browse-row",
         "title": "View Pip Package In The Browser"
+      },
+      {
+        "command": "pip-requirements.create-requirements",
+        "title": "Pip Requirements: Create Requirements File"
       }
     ],
     "menus": {

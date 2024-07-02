@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { browseRow, freezeCmd, installCmd, installRow } from './commands';
+import { browseRow, createRequirements, freezeCmd, installCmd, installRow } from './commands';
 
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
@@ -7,6 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
 		freezeCmd,
 		installRow,
 		browseRow,
+		createRequirements,
 	);
 }
 

@@ -1,11 +1,9 @@
 # Changelog
 
-## [Planned]
+## v1.10.0
 
-- Rewrite that terminal experience to child_process
-- Rename that setting?
-
-## [Unreleased]
+- Updated Change Log
+- Added new command: `Pip Requirements: Create Requirements File`
 
 ## v1.9.1 2024-04-22
 - Removed the manual commands from the README

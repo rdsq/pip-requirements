@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import { defaultPath, extName } from './general';
 
-function runPipCommand(path: string, command: string) {
+export function runPipCommand(path: string, command: string) {
     const terminal = vscode.window.createTerminal();
     terminal.sendText(`python -m pip ${command} "${path}"`);
     terminal.show();
