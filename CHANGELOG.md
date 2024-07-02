@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.10.0
+## v1.10.0 2024-07-02
 
 - Updated Change Log
 - Added new command: `Pip Requirements: Create Requirements File`
