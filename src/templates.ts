@@ -1,8 +1,21 @@
 import * as vscode from 'vscode';
-import { defaultPath, extName } from './general';
+import { defaultPath } from './general';
+
+const extensionTerminalName = 'pip requirements';
+
+export function getExtensionTerminal(): vscode.Terminal {
+    for (const terminal of vscode.window.terminals) {
+        if (terminal.name === extensionTerminalName) {
+            return terminal;
+        }
+    }
+    return vscode.window.createTerminal({
+        name: extensionTerminalName,
+    });
+}
 
 export function runPipCommand(path: string, command: string) {
-    const terminal = vscode.window.createTerminal();
+    const terminal = getExtensionTerminal();
     terminal.sendText(`python -m pip ${command} "${path}"`);
     terminal.show();
 }

@@ -1,9 +1,10 @@
 # Changelog
 
-## [Unreleased]
+## v1.11.0 2024-08-07
 
 - Updated the icon
 - Updated README
+- Now the extension doesn't open a new terminal for every action, but reuses older
 
 ## v1.10.0 2024-07-02
 

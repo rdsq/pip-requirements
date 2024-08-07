@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { focusTemplate, contextTemplate, runPipCommand } from './templates';
+import { focusTemplate, contextTemplate, runPipCommand, getExtensionTerminal } from './templates';
 import { extName } from './general';
 import * as path from 'path';
 import { writeFileSync } from 'fs';
@@ -18,7 +18,7 @@ export const installRow = vscode.commands.registerCommand(`${extName}.install-ro
         if (parsed.version !== null) {
             query += `==${parsed.version}`;
         }
-        const terminal = vscode.window.createTerminal();
+        const terminal = getExtensionTerminal();
         terminal.sendText(`python -m pip install ${query}`);
         terminal.show();
     });
