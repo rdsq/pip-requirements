@@ -1,7 +1,7 @@
 {
   "name": "pip-requirements",
   "displayName": "Pip Requirements",
-  "description": "Some useless tools for requirements.txt",
+  "description": "Tools to simplify your interaction with pip's requirements.txt",
   "author": {
     "name": "rdsq"
   },
