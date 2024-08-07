@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Updated the icon
+- Updated README
 
 ## v1.10.0 2024-07-02
 
