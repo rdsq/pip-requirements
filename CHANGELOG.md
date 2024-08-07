@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Updated the icon
+
 ## v1.10.0 2024-07-02
 
 - Updated Change Log
