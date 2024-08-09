@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## v1.11.1 2024-08-09
 
 - Open sourced this extension
 
