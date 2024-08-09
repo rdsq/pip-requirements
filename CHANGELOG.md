@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Open sourced this extension
+
 ## v1.11.0 2024-08-07
 
 - Updated the icon

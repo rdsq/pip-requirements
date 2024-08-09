@@ -8,6 +8,10 @@
   "publisher": "rdsq",
   "version": "1.11.0",
   "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdsq/pip-requirements"
+  },
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -99,8 +103,7 @@
     "watch-web": "webpack --watch",
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
-    "test": "vscode-test",
-    "publish": "vsce publish --allow-missing-repository"
+    "test": "vscode-test"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
