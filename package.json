@@ -114,10 +114,7 @@
     "@vscode/test-electron": "^2.3.8",
     "assert": "^2.1.0",
     "eslint": "^8.56.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.3.3",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "typescript": "^5.3.3"
   },
   "extensionDependencies": [
     "ms-python.python"
