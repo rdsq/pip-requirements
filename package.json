@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "icon": "icon.png",
   "repository": {
     "type": "git",
@@ -98,8 +98,6 @@
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "compile-web": "webpack",
-    "watch-web": "webpack --watch",
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
@@ -107,7 +105,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.8",
     "@types/node": "22.7.4",
-    "@types/vscode": "^1.93.0",
+    "@types/vscode": "^1.86.0",
     "@typescript-eslint/eslint-plugin": "^8.8.0",
     "@typescript-eslint/parser": "^8.8.0",
     "@vscode/test-cli": "^0.0.10",

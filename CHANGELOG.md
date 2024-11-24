@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.11.2 2024-11-24
+
+- Removed the web version
+
 ## v1.11.1 2024-08-09
 
 - Open sourced this extension
