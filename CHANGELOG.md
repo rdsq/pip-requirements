@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.11.3 2025-06-24
+
+- Removed `ms-python.python` dependency
+
 ## v1.11.2 2024-11-24
 
 - Removed the web version

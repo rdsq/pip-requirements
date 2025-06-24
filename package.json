@@ -6,7 +6,7 @@
     "name": "rdsq"
   },
   "publisher": "rdsq",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "icon": "icon.png",
   "repository": {
     "type": "git",
